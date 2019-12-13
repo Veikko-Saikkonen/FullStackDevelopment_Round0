@@ -8,11 +8,11 @@ olevalla js funktiolla.
 end note
 Palvelin->Selain: 302 Found
 Selain->Palvelin: HTTP GET /notes
-Palvelin->Selain: 304 Not modified
+Palvelin->Selain: 200 Ok
 Selain->Palvelin: HTTP GET /main.css
-Palvelin->Selain: 304 Not modified
+Palvelin->Selain: 200 Ok
 Selain->Palvelin: HTTP GET /main.js
-Palvelin->Selain: 304 Not modified
+Palvelin->Selain: 200 Ok
 note over Selain:
 selain alkaa suorittaa js-koodia
 joka pyytää JSON-datan palvelimelta,
@@ -24,5 +24,3 @@ note over Selain:
 selain suorittaa tapahtumankäsittelijän
 joka renderöi muistiinpanot näytölle
 end note
-
-
