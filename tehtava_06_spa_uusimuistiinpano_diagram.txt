@@ -1,13 +1,14 @@
-selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
-palvelin-->selain: 201 Created
-note left of selain:
-Selain päivittää oman listansa.
+note over selain:
+Selain estää tietojen lähettämisen ja
+päivittää oman listansa js funktiolla.
 end note
+note over selain:
+Selain suorittaa tapahtumankäsittelijän
+joka renderöi muistiinpanot näytölle
+end note
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
 note right of palvelin:
 Palvelin päivitää oman listansa ja
 vahvistaa onnistumisen selaimelle koodilla 201.
 end note
-note over selain:
-selain suorittaa tapahtumankäsittelijän,
-joka renderöi muistiinpanot näytölle
-end note
+palvelin-->selain: 201 Created
